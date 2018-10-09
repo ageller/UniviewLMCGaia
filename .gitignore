@@ -15,4 +15,5 @@ Thumbs.db
 __pycache__
 *.pyc
 
-
+#large file that can be downloaded#
+LMC.csv
