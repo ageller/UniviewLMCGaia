@@ -9,6 +9,7 @@ uniform float coronaRad;
 
 out vec2 texcoord;
 out float coronaTeff;
+out float randN;
 
 // axis should be normalized
 mat3 rotationMatrix(vec3 axis, float angle)
@@ -48,7 +49,8 @@ void drawSprite(vec4 position, float radius, float rotation)
 void main()
 {
 	coronaTeff = 5000.; //for now, giving all the same Teff
-
+	randN = gl_in[1].gl_Position.x; //index for random corona
+	
 	drawSprite(vec4(gl_in[0].gl_Position.xyz, 1.), coronaRad, 0);
 
 }
