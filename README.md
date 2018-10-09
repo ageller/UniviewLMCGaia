@@ -1,2 +1,2 @@
 # UniviewLMCGaia
-Uniview module showing Gaia stars in the LCM
+Uniview module showing Gaia stars in the LMC
